@@ -12,8 +12,7 @@ app.get("/", function (req, res) {
   if (currentDay === 6 || currentDay === 0) {
     res.sendFile(__dirname + "/weekend.html");
   } else {
-    res.write("<h1>Boo! I have to work!</h1>");
-    res.write("<p>It is not the weekend!</p>");
+    res.sendFile(__dirname + "/weekday.html");
   }
 });
 
