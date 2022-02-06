@@ -18,10 +18,10 @@
                 <p><%= newListItems[i] %></p>
             </div>
         <% } %>
+        <form class="iem" action="/" method="post">
+            <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+            <button type="submit" name="button">+</button>
+        </form>
     </div>
-    <form action="/" method="post">
-        <input type="text" name="newItem">
-        <button type="submit" name="button">Add</button>
-    </form>
 </body>
 </html>
